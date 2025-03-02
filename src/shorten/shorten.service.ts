@@ -50,7 +50,7 @@ export class ShortenService {
         data: { user_id: url.id },
       });
     }
-    return dataNew;
+    return dataNew ? dataNew : data;
   }
 
   formatString(input: string): string {
